@@ -2,7 +2,7 @@ async function getWeather() {
   const city = document.getElementById("city").value;
 
   try {
-    const res = await fetch(`http://localhost:5000/weather?city=${city}`);
+    const res = await fetch(`http://16.171.29.7:5000/weather?city=${city}`);
     const data = await res.json();
 
     if (data.error) {
